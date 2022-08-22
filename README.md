@@ -32,7 +32,7 @@ Our network is tested on two datasets for street-view scene change detection.
 
 ## Dataset Preprocessing
 
-- For DSSCD pretraining - included in the DSSCD--dataset--CMU.py/PCD.py
+- For DSP pretraining - included in the DSP--dataset--CMU.py/PCD.py
 - For finetuning and evaluation - Please follow the preprocessing method used by the official implementation of [{Dynamic Receptive Temporal Attention Network for Street Scene Change Detection paper}](https://github.com/Herrccc/DR-TANet) 
 
 Dataset folder structure for VL-CMU-CD:
@@ -47,9 +47,9 @@ Dataset folder structure for VL-CMU-CD:
 ## SSL Training
 
 
-- For training 'D-SSCD' on VL-CMU-CD dataset:
+- For training 'DSP' on VL-CMU-CD dataset:
 ```
-python3 DSSCD/train.py --ssl_batchsize 16 --ssl_epochs 500 --save_dir /outputs --data_dir /path/to/VL-CMU-CD --img_size 256 --n_proj 256 --hidden_layer 512 --output_stride 8 --pre_train False --m_backbone False --barlow_twins True --dense_cl False --kd_loss True --kd_loss_2 sp --inter_kl False --alpha_inter_kd 0 --alpha_sp 3000 --alpha_kl 100
+python3 DSP/train.py --ssl_batchsize 16 --ssl_epochs 500 --save_dir /outputs --data_dir /path/to/VL-CMU-CD --img_size 256 --n_proj 256 --hidden_layer 512 --output_stride 8 --pre_train False --m_backbone False --barlow_twins True --dense_cl False --kd_loss True --kd_loss_2 sp --inter_kl False --alpha_inter_kd 0 --alpha_sp 3000 --alpha_kl 100
 ```
  
 
@@ -73,7 +73,7 @@ Start evaluating with DR-TANet on 'PCD' dataset.
     python3 eval.py --dataset pcd --datadir /path_to_dataset --checkpointdir /path_to_check_point_directory --resultdir /path_to_save_eval_result --encoder-arch resnet18 --drtam --refinement --store-imgs
     
 ## Analysis
-We analyse our D-SSCD model under 3 scenarios: **1. Robustness to Natural corruptions 2. Out-of-distribution data 3. Limited labeled data. For more details, please see the [Paper](https://arxiv.org/abs/2208.05838).** 
+We analyse our DSP model under 3 scenarios: **1. Robustness to Natural corruptions 2. Out-of-distribution data 3. Limited labeled data. For more details, please see the [Paper](https://arxiv.org/abs/2208.05838).** 
 For Natural corruptions evaluation, please refer to the paper [{Benchmarking Neural Network Robustness to
 Common Corruptions and Surface Variations }](https://arxiv.org/pdf/1807.01697.pdf) 
 
