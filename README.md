@@ -77,7 +77,7 @@ We analyse our D-SSCD model under 3 scenarios: **1. Robustness to Natural corrup
 For Natural corruptions evaluation, please refer to the paper [{Benchmarking Neural Network Robustness to
 Common Corruptions and Surface Variations }](https://arxiv.org/pdf/1807.01697.pdf) 
 
-And finally, for the ease of comparison, we have provided the model checkpoints for the DSP pretraining below:[gdrive link](https://drive.google.com/drive/folders/1UwFQ7NjXRwyfgfhFnX6_CPTm8hQ8AoFF?usp=sharing)
+And finally, for the ease of comparison, we have provided the model checkpoints for the DSP pretraining below:  [google drive](https://drive.google.com/drive/folders/1UwFQ7NjXRwyfgfhFnX6_CPTm8hQ8AoFF?usp=sharing)
 
 
 ## Cite our work
