@@ -8,7 +8,7 @@
 
 Scene change detection (SCD), a crucial perception task, identifies changes by comparing scenes captured at different times. SCD is challenging due to noisy changes in illumination, seasonal variations, and perspective differences across a pair of views. Deep neural network based solutions require a large quantity of annotated data which is tedious and expensive to obtain. On the other hand, transfer learning from large datasets induces domain shift. To address these challenges, we propose a novel Differencing self-supervised pretraining (DSP) method that uses feature differencing to learn discriminatory representations corresponding to the changed regions while simultaneously tackling the noisy changes by enforcing temporal invariance across views. Our experimental results on SCD datasets demonstrate the effectiveness of our method, specifically to differences in camera viewpoints and lighting conditions. Compared against the self-supervised Barlow Twins and the standard ImageNet pretraining that uses more than a million additional labeled images, DSP can surpass it without using any additional data. Our results also demonstrate the robustness of DSP to natural corruptions, distribution shift, and learning under limited labeled data.
 
-![alt text](https://github.com/NeurAI-Lab/DSP/DSP/method.png)
+![alt text](https://github.com/NeurAI-Lab/DSP/method.png)
 
 For more details, please see the [Paper](https://arxiv.org/abs/2208.05838) and [Presentation](https://www.youtube.com/watch?v=kWUxxC5hjKw).
 
