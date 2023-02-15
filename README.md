@@ -1,7 +1,7 @@
 # Differencing based Self-supervised pretraining for scene change detection (DSP)
 
 
-**This is the official code for COLLA 2022 Paper, ["Differencing based Self-supervised pretraining for scene change detection"](paper) by [Vijaya Raghavan Thiruvengadathan Ramkumar](https://www.linkedin.com/in/vijayaraghavan95), [Elahe Arani](https://www.linkedin.com/in/elahe-arani-630870b2/) and [Bahram Zonooz](https://www.linkedin.com/in/bahram-zonooz-2b5589156/), where we propose a novel self-supervised pretraining architechture based on differenceing called DSP for scene change detection.**
+**This is the official code for COLLA 2022 Paper, ["Differencing based Self-supervised pretraining for scene change detection"](https://proceedings.mlr.press/v199/ramkumar22a.html) by [Vijaya Raghavan Thiruvengadathan Ramkumar](https://www.linkedin.com/in/vijayaraghavan95), [Elahe Arani](https://www.linkedin.com/in/elahe-arani-630870b2/) and [Bahram Zonooz](https://www.linkedin.com/in/bahram-zonooz-2b5589156/), where we propose a novel self-supervised pretraining architechture based on differenceing called DSP for scene change detection.**
 
 ## Abstract
 
@@ -85,9 +85,11 @@ And finally, for the ease of comparison, we have provided the model checkpoints 
 If you find the code useful in your research, please consider citing our paper:
 
 <pre>
-@article{ramkumar2022differencing,
+@inproceedings{ramkumar2022differencing,
   title={Differencing based Self-supervised pretraining for Scene Change Detection},
   author={Ramkumar, Vijaya Raghavan T and Arani, Elahe and Zonooz, Bahram},
-  journal={arXiv preprint arXiv:2208.05838},
-  year={2022}
+  booktitle={Conference on Lifelong Learning Agents},
+  pages={952--965},
+  year={2022},
+  organization={PMLR}
 }
